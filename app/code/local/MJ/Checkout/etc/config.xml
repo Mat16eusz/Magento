@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Mateusz Jasiak
+ * 
+ * @author    Mateusz Jasiak
+ * @author    mateusz.jasiak.dev@gmail.com
+ *
+ * @package   MJ_Checkout
+ */
+ -->
+<config>
+    <modules>
+        <mj_checkout>
+            <version>0.1.0</version>
+        </mj_checkout>
+    </modules>
+
+    <frontend>
+        <layout>
+            <updates>
+                <mj_checkout>
+                    <file>mj_checkout.xml</file>
+                </mj_checkout>
+            </updates>
+        </layout>
+    </frontend>
+
+    <global>
+        <blocks>
+            <checkout>
+                <rewrite>
+                    <cart_totals>MJ_Checkout_Block_Cart_Totals</cart_totals>
+                </rewrite>
+            </checkout>
+        </blocks>
+    </global>
+</config>

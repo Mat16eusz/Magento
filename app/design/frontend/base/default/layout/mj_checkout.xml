@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Mateusz Jasiak
+ * 
+ * @author    Mateusz Jasiak
+ * @author    mateusz.jasiak.dev@gmail.com
+ *
+ * @package   MJ_Checkout
+ */
+ -->
+<layout version="0.1.0">
+    <checkout_cart_index>
+        <reference name="checkout.cart.totals">
+            <action method="setTemplate">
+                <template>mj_checkout/cart/totals.phtml</template>
+            </action>
+        </reference>
+    </checkout_cart_index>
+</layout>
