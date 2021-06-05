@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Mateusz Jasiak
+ * 
+ * @author    Mateusz Jasiak
+ * @author    mateusz.jasiak.dev@gmail.com
+ *
+ * @package   MJ_Virtualgrouped
+ */
+ -->
+<!DOCTYPE config>
+<config>
+    <modules>
+        <MJ_VirtualGrouped>
+            <version>5.1.0</version>
+        </MJ_VirtualGrouped>
+    </modules>
+
+    <global>
+        <models>
+            <virtualgrouped>
+                <class>MJ_VirtualGrouped_Model</class>
+                <resourceModel>virtualgrouped_resource</resourceModel>
+            </virtualgrouped>
+            <virtualgrouped_resource>
+                <class>MJ_VirtualGrouped_Model_Resource</class>
+                <entities>
+                    <event>
+                        <table>virtualgrouped_event</table>
+                    </event>
+                    <event_registrant>
+                        <table>virtualgrouped_event_registrant</table>
+                    </event_registrant>
+                </entities>
+            </virtualgrouped_resource>
+        </models>
+
+        <resources>
+            <virtualgrouped_setup>
+                <setup>
+                    <module>MJ_VirtualGrouped</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </virtualgrouped_setup>
+        </resources>
+
+        <blocks>
+            <virtualgrouped>
+                <class>MJ_VirtualGrouped_Block</class>
+            </virtualgrouped>
+        </blocks>
+
+        <helpers>
+            <virtualgrouped>
+                <class>MJ_VirtualGrouped_Helper</class>
+            </virtualgrouped>
+        </helpers>
+        
+        <catalog>
+            <product>
+                <type>
+                    <virtualgrouped module="virtualgrouped" translate="label">
+                        <label>Virtual Grouped</label>
+                        <model>virtualgrouped/product_type_virtualgrouped</model>
+                        <composite>0</composite>
+                    </virtualgrouped>
+                    <grouped>
+                        <allow_product_types>
+                            <virtualgrouped />
+                        </allow_product_types>
+                    </grouped>
+                    <configurable>
+                        <allow_product_types>
+                            <virtualgrouped />
+                        </allow_product_types>
+                    </configurable>
+                    <bundle>
+                        <allow_product_types>
+                            <virtualgrouped />
+                        </allow_product_types>
+                    </bundle>
+                </type>
+            </product>
+        </catalog>
+    </global>
+</config>
