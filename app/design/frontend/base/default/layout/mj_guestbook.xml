@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Mateusz Jasiak
+ * 
+ * @author    Mateusz Jasiak
+ * @author    mateusz.jasiak.dev@gmail.com
+ *
+ * @package   MJ_Guestbook
+ */
+ -->
+<layout version="0.1.0">
+    <default>
+        <reference name="content">
+        </reference>
+    </default>
+
+<!--
+Custom guestbook page
+-->
+
+    <guestbook_index_index>
+        <reference name="content">
+            <block type="core/messages" name="global_messages" as="global_messages"/>
+            <block type="core/messages" name="messages" as="messages"/>
+            <block type="guestbook/Guestbook" name="Guestbook" template="mj_guestbook/Guestbook.phtml"/>
+        </reference>
+    </guestbook_index_index>
+</layout>

@@ -1,0 +1,35 @@
+<?php
+/**
+ * Mateusz Jasiak
+ * 
+ * @author    Mateusz Jasiak
+ * @author    mateusz.jasiak.dev@gmail.com
+ *
+ * @package   MJ_Guestbook
+ */
+?>
+<h1><?php echo $this->__('Please enter your data') ?></h1>
+
+<div>
+    <form action="<?php echo $this->getUrl('guestbook/index/save') ?>" method="post">
+        <fieldset>
+            <ul>
+                <li>
+                    <label for="name"><?php echo $this->__('Name') ?></label> <br />
+                    <input type="text" name="name" />
+                </li>
+                <li>
+                    <label for="surname"><?php echo $this->__('Surname') ?></label> <br />
+                    <input type="text" name="surname" />
+                </li>
+                <li>
+                    <label for="email"><?php echo $this->__('E-mail Address') ?></label> <br />
+                    <input type="email" name="mail" />
+                </li>
+                <li>
+                    <input type="submit" value="Send" class="button"/>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</div>
