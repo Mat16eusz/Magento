@@ -1,0 +1,23 @@
+<?php
+/**
+ * Mateusz Jasiak
+ * 
+ * @author    Mateusz Jasiak
+ * @author    mateusz.jasiak.dev@gmail.com
+ *
+ * @package   MJ_CustomGalleryWidget
+ */
+?>
+
+<?php /** @var $this MJ_CustomGalleryWidget_Block_Carousel */ ?>
+<div id='carouselExampleControls' class='carousel slide' data-ride='carousel'>
+    <div class='carousel-inner'>
+        <?php echo $this->getImageUrl() ?>
+    </div>
+    <a class='carousel-control-prev' role='button' href='#carouselExampleControls' data-slide='prev'>
+        <span class='sr-only'><?php echo $this->__('Previous') ?></span>
+    </a>
+    <a class='carousel-control-next' role='button' href='#carouselExampleControls' data-slide='next'>
+        <span class='sr-only'><?php echo $this->__('Next') ?></span>
+    </a>
+</div>
