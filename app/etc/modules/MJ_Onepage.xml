@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+/**
+ * Mateusz Jasiak
+ * 
+ * @author    Mateusz Jasiak
+ * @author    mateusz.jasiak.dev@gmail.com
+ *
+ * @package   MJ_Onepage
+ */
+ -->
+<config>
+    <modules>
+        <MJ_Onepage>
+            <active>true</active>
+            <codePool>local</codePool>
+        </MJ_Onepage>
+    </modules>
+</config>

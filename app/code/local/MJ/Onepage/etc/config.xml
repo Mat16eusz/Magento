@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Mateusz Jasiak
+ * 
+ * @author    Mateusz Jasiak
+ * @author    mateusz.jasiak.dev@gmail.com
+ *
+ * @package   MJ_Onepage
+ */
+ -->
+<config>
+    <modules>
+        <MJ_Onepage>
+            <version>1.0</version>
+        </MJ_Onepage>
+    </modules>
+
+    <frontend>
+        <routers>
+            <checkout>
+                <use>standard</use>
+                <args>
+                    <modules>
+                        <MJ_Onepage before="Mage_Checkout">MJ_Onepage</MJ_Onepage>
+                    </modules>
+                </args>
+            </checkout>
+        </routers>
+    </frontend>
+
+    <global>
+        <blocks>
+            <checkout>
+                <rewrite>
+                    <onepage>MJ_Onepage_Block_Onepage</onepage>
+                </rewrite>
+            </checkout>
+        </blocks>
+
+        <helpers>
+            <mj_onepage>
+                <class>MJ_Onepage_Helper</class>
+            </mj_onepage>
+        </helpers>
+    </global>
+</config>
