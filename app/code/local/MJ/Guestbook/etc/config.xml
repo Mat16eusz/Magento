@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Mateusz Jasiak
+ * 
+ * @author    Mateusz Jasiak
+ * @author    mateusz.jasiak.dev@gmail.com
+ *
+ * @package   MJ_Guestbook
+ */
+ -->
+<config>
+    <modules>
+        <MJ_Guestbook>
+            <version>0.1.0</version>
+        </MJ_Guestbook>
+    </modules>
+
+    <frontend>
+        <routers>
+            <guestbook>
+                <use>standard</use>
+                <args>
+                    <module>MJ_Guestbook</module>
+                    <frontName>guestbook</frontName>
+                </args>
+            </guestbook>
+        </routers>
+
+        <layout>
+            <updates>
+                <mj_guestbook>
+                    <file>mj_guestbook.xml</file>
+                </mj_guestbook>
+            </updates>
+        </layout>
+    </frontend>
+
+    <global>
+        <models>
+            <guestbook>
+                <class>MJ_Guestbook_Model</class>
+                <resourceModel>guestbook_resource</resourceModel>
+            </guestbook>
+            <guestbook_resource>
+                <class>MJ_Guestbook_Model_Resource</class>
+                <entities>
+                    <guestbook>
+                        <table>guestbook</table>
+                    </guestbook>
+                </entities>
+            </guestbook_resource>
+        </models>
+
+        <resources>  
+            <guestbook_setup>
+                <setup>
+                    <module>MJ_Guestbook</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </guestbook_setup>
+            <guestbook_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </guestbook_write>
+            <guestbook_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </guestbook_read>
+        </resources>
+
+        <helpers>
+            <guestbook>
+                <class>MJ_Guestbook_Helper</class>
+            </guestbook>
+        </helpers>
+
+        <blocks>
+            <guestbook>
+                <class>MJ_Guestbook_Block</class>
+            </guestbook>
+        </blocks>
+    </global>
+</config>

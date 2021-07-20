@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Mateusz Jasiak
+ * 
+ * @author    Mateusz Jasiak
+ * @author    mateusz.jasiak.dev@gmail.com
+ *
+ * @package   MJ_Guestbook
+ */
+ -->
+<config>
+    <modules>
+        <MJ_Guestbook>
+            <active>true</active>
+            <codePool>local</codePool>
+        </MJ_Guestbook>
+    </modules>
+</config>
