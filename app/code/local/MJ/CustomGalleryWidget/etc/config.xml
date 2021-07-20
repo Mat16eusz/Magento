@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Mateusz Jasiak
+ * 
+ * @author    Mateusz Jasiak
+ * @author    mateusz.jasiak.dev@gmail.com
+ *
+ * @package   MJ_CustomGalleryWidget
+ */
+ -->
+<config>
+    <modules>
+        <MJ_CustomGalleryWidget>
+            <version>0.1.0</version>
+        </MJ_CustomGalleryWidget>
+    </modules>
+
+    <global>
+        <blocks>
+            <customgallerywidget>
+                <class>MJ_CustomGalleryWidget_Block</class>
+            </customgallerywidget>
+        </blocks>
+
+        <helpers>
+            <customgallerywidget>
+                <class>MJ_CustomGalleryWidget_Helper</class>
+            </customgallerywidget>
+        </helpers>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <customgallerywidget before="Mage_Adminhtml">MJ_CustomGalleryWidget_Adminhtml</customgallerywidget>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <customgallerywidget>
+                    <file>mj_customgallerywidget.xml</file>
+                </customgallerywidget>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>
