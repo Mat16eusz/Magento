@@ -34,5 +34,11 @@
                 </rewrite>
             </checkout>
         </blocks>
+
+        <models>
+			<mj_checkout>
+				<class>MJ_Checkout_Model</class>
+			</mj_checkout>
+		</models>
     </global>
 </config>

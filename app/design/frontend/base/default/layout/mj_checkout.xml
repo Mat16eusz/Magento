@@ -16,5 +16,10 @@
                 <template>mj_checkout/cart/totals.phtml</template>
             </action>
         </reference>
+        <reference name="checkout.cart.coupon">
+            <action method="setTemplate">
+                <template>mj_checkout/cart/sku.phtml</template>
+            </action>
+        </reference>
     </checkout_cart_index>
 </layout>
