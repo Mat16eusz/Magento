@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Mateusz Jasiak
+ * 
+ * @author    Mateusz Jasiak
+ * @author    mateusz.jasiak.dev@gmail.com
+ *
+ * @package   MJ_VatEu
+ */
+ -->
+<config>
+    <modules>
+        <MJ_VatEu>
+            <version>0.1.0</version>
+        </MJ_VatEu>
+    </modules>
+
+    <global>
+        <helpers>
+			<mj_vateu>
+				<class>MJ_VatEu_Helper</class>
+			</mj_vateu>
+		</helpers>
+
+        <resources>  
+            <mj_vateu_setup>
+                <setup>
+                    <module>MJ_VatEu</module>
+                    <class>Mage_Customer_Model_Entity_Setup</class>
+                </setup>
+            </mj_vateu_setup>
+        </resources>
+    </global>
+</config>

@@ -122,6 +122,16 @@
                             </div>
                         </div>
                     </li>
+
+                    <li class="fields">
+                        <div class="field">
+                            <label for="vateu" class="input-box"><em>*</em><?php echo $this->__('Vat Eu') ?></label>
+                            <div class="input-box">
+                                <input type="text" name="shipping[vateu]" value="<?php echo $this->htmlEscape($this->getAddress()->getVatEu()) ?>" title="<?php echo $this->__('Vat Eu') ?>" id="shipping:vateu" class="input-text" />
+                            </div>
+                        </div>
+                    </li>
+
                 <?php if ($this->isCustomerLoggedIn() && $this->customerHasAddresses()):?>
                     <li class="control">
                         <input type="checkbox" name="shipping[save_in_address_book]" value="1" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Save in address book')) ?>" id="shipping:save_in_address_book" onchange="shipping.setSameAsBilling(false);"<?php if ($this->getAddress()->getSaveInAddressBook()):?> checked="checked"<?php endif;?> class="checkbox" /><label for="shipping:save_in_address_book"><?php echo $this->__('Save in address book') ?></label></li>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Mateusz Jasiak
+ * 
+ * @author    Mateusz Jasiak
+ * @author    mateusz.jasiak.dev@gmail.com
+ *
+ * @package   MJ_VatEu
+ */
+ -->
+<config>
+    <modules>
+        <MJ_VatEu>
+            <active>true</active>
+            <codePool>local</codePool>
+        </MJ_VatEu>
+    </modules>
+</config>
