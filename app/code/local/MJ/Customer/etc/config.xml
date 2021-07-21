@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Mateusz Jasiak
+ * 
+ * @author    Mateusz Jasiak
+ * @author    mateusz.jasiak.dev@gmail.com
+ *
+ * @package   MJ_Customer
+ */
+ -->
+<config>
+    <modules>
+        <MJ_Customer>
+            <version>1.0.0</version>
+        </MJ_Customer>
+    </modules>
+
+    <frontend>
+        <routers>
+            <customer>
+                <args>
+                    <modules>
+                        <MJ_Customer before="Mage_Customer">MJ_Customer</MJ_Customer>
+                    </modules>
+                </args>
+            </customer>
+        </routers>
+    </frontend>
+
+    <global>
+        <helpers>
+            <mj_customer>
+                <class>MJ_Customer_Helper</class>
+            </mj_customer>
+        </helpers>
+
+        <resources>
+            <mj_customer_setup>
+                <setup>
+                    <module>MJ_Customer</module>
+                    <class>Mage_Customer_Model_Resource_Setup</class>
+                </setup>
+            </mj_customer_setup>
+        </resources>
+    </global>
+</config>
